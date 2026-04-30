@@ -41,6 +41,7 @@ public class ReservationService {
         this.mapper = mapper;
     }
 
+    // Obtener todas las reservas
     public List<Reservation> getAll() {
         List<ReservationEntity> reservations = reservationRepository.findAll();
         Type listType = new TypeToken<List<Reservation>>() {}.getType();
